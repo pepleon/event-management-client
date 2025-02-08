@@ -26,7 +26,7 @@ const DatePicker = ({ onDateChange }) => {
         <input
           type="date"
           value={selectedDate}
-          onChange={handleDateChange}  // Update selected date when user picks a date
+          onChange={handleDateChange}  
         />
       )}
     </div>
