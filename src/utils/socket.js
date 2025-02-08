@@ -2,13 +2,11 @@ import io from "socket.io-client";
 import { BASE_URL } from "./constants";
 
 export const createSocketConnection = () => {
-if (location.hostname === "localhost"){
-    return io(BASE_URL)
-}
 
-else {
-    return io("/", {path: "/api/socket.io"});
-}
+const SERVER_URL = window.location.hostname === "localhost" ? BASE_URL : "https://event-management-backend-dzvv.onrender.com";
+
+return io(SERVER_URL, { path: "/api/socket.io" });
+
     
 
 };
