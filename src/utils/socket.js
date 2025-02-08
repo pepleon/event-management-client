@@ -7,7 +7,7 @@ if (location.hostname === "localhost"){
 }
 
 else {
-    return io("/", {path: "/api/socket.io"});
+    return io("/", {path: "/socket.io"});
 }
     
 
