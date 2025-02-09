@@ -12,3 +12,7 @@ pass:  Test@123
 
 email: test@exmple.com
 pass:  Test@123
+
+
+The hosted frontend URL: https://event-management-client-x8h9.onrender.com
+The hosted backedn URL:  https://event-management-backend-dzvv.onrender.com
